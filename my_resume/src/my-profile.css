@@ -1,0 +1,49 @@
+/*.custom-card {*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*    overflow: hidden; !* Ensures the border radius is applied correctly *!*/
+/*}*/
+.container {
+    background-color: #2cdea9; /* Light background color */
+    padding: 1px; /* Optional: add some padding */
+    margin-top: -1.75rem; /* Optional: add some margin */
+    margin-bottom: -2.5rem; /* Optional: add some margin */
+    margin-left: 5rem;
+}
+
+#card_1 {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Scale up by 2% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjusted shadow effect for subtle zoom */
+}
+
+#card_img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+    position: relative; /* Ensure positioning context for the image */
+    overflow: hidden; /* Hide any overflow from the image */
+    width: 210px; /* Set a fixed width for the card */
+    height: 200px; /* Set a fixed height for the card */
+    /* Remove padding-left as it might cause alignment issues */
+    /* padding-left: -5rem; */
+}
+
+#card_img .card-img-top {
+    position: absolute; /* Absolute positioning for precise control */
+    top: 0; /* Align image to the top */
+    left: 0; /* Align image to the left */
+    width: 100%; /* Make image fill the width of the card */
+    height: 100%; /* Make image fill the height of the card */
+    object-fit: cover; /* Cover the card area without distortion */
+    display: block; /* Remove extra space below the image */
+}
+
+#card_education.custom-card {
+    margin-top: -260px; /* Adjust this value as needed */
+    /* Optional: Adjust other margins or padding to fine-tune positioning */
+}
+
+
+
